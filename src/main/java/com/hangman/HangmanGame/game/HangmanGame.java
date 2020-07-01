@@ -248,6 +248,7 @@ public class HangmanGame {
         } catch (StringIndexOutOfBoundsException ignored) {
         }
 
+        letters.removeLetter(chosenChar);
 
         boolean isFound = CSLL2.revealTheletters(CSLL1, chosenChar);
 
