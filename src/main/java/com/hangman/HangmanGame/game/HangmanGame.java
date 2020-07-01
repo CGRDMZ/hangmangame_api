@@ -131,17 +131,19 @@ public class HangmanGame {
         gameLoop.scheduleAtFixedRate(new TimerTask() {
             @Override
             public void run() {
-                gameStatus = checkWinStatus();
-                if (gameStatus == 1 || gameStatus == -1) {
-                    gameStatus = 2;
-                    gameLoop.cancel();
-                }
+
                 System.out.println("loops");
                 String selectedVote = countTheVotes();
                 System.out.println(selectedVote);
                 update(selectedVote);
                 letterVotes.clear();
                 votedTokens.clear();
+
+                gameStatus = checkWinStatus();
+                if (gameStatus == 1 || gameStatus == -1) {
+                    gameStatus = 2;
+                    gameLoop.cancel();
+                }
             }
         }, ROUND_LENGTH * 1000, ROUND_LENGTH * 1000);
 
