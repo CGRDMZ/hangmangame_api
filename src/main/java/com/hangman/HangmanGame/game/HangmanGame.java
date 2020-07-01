@@ -17,7 +17,7 @@ import java.util.stream.Collectors;
 @EnableAsync
 @EnableScheduling
 public class HangmanGame {
-    private static final String FILEPATH_INPUT = "D:\\input.txt";
+    private static final String FILEPATH_INPUT = "input.txt";
     private static final int NUMBER_OF_GUESSES = 6;
 
     private static final int ROUND_LENGTH = 120;
