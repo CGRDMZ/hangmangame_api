@@ -20,7 +20,7 @@ public class HangmanGame {
     private static final String FILEPATH_INPUT = "input.txt";
     private static final int NUMBER_OF_GUESSES = 6;
 
-    private static final int ROUND_LENGTH = 120;
+    private static final int ROUND_LENGTH = 60;
 
     private int userCount;
 
