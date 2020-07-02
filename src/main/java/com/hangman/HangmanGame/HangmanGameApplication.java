@@ -22,7 +22,7 @@ public class HangmanGameApplication {
 		return new WebMvcConfigurer() {
 			@Override
 			public void addCorsMappings(CorsRegistry registry) {
-				registry.addMapping("/**").allowCredentials(true).allowedOrigins("http://localhost:8081").allowedOrigins("http://192.168.1.2:8081");
+				registry.addMapping("/**").allowCredentials(true).allowedOrigins("http://localhost:8081").allowedOrigins("http://192.168.1.2:8081").allowedOrigins("https://cgrdmz.github.io");
 			}
 		};
 	}
